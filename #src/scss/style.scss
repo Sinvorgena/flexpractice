@@ -1,117 +1,108 @@
 
 @import "nullStyle";
 
-.block {
-
-	&__column {
-		border: 10px solid #ece89d;
+.block { 
+	height: 1817px;
+	width: 1286px;
+	background-color: #445162;
+	margin: 0px auto;
+	&__header {
+		color: white;
+		text-align: left;
 		display: flex;
-		flex-direction: column;
-		max-width: 1310px;
-		height: 1800px;
-		margin: 0px auto;
-	}
-	&__content {
-		height: 100%;
-		display: flex;
-		border: 4px solid green;
-		background-color: black;
-	}
-	&__element {
-		flex: 1 1 auto;
-		border: 2px solid red;
+		align-items: center;
+		width: auto;
+		height: 323px;
+		background-color: beige;
 	}
 
-	&__element1 {
-		min-height: 323px;
-		flex: 0 1 auto;
-	} 
-	&__element1 &__content1{
+	&__main {
+	}
+
+	&__postcontainer {
+	}
+
+	&__subscribe {
+	}
+}
+.block-header {
+
+	&__container {
+		display: flex;
+		width: 1180px;
+		height: 222px;
 		background-color: #445162;
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
+		margin: 0px auto;
+		justify-content: space-between;
+		
 	}
-	&__content1 &__title-text h1{
-		letter-spacing: 1px;
-		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
-		color: #ffffff;
-		margin: 0px 0px 0 15px;
-		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-		font-size: 60px;
-		text-align: left;
-	}
-	&__content1 &__list{
-		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
-		color: #ffffff;
-		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-		font-size: 20px;
-		line-height: 36px;
-		text-align: left;
-		margin: 27px 0px 0px 24px;
-		& li{
-			padding: 0 0 0 33px;
-			background: url("/img/check_icon.png") left center no-repeat;
-		}
-	
-	
-	}
-	&__content1 &__title-text{
-		border: 1px solid #000;
-		margin: 10px 230px 0px 0px;
-	}
-	&__content1 &__image{
-		margin: 0px 20px 0px 0px;
-	}
-	
 
-	&__element2 {
-		max-height: 290px;
-	}
-	&__element2 &__content2{
-		background-color: #fff;
-		flex-direction: row;
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-	}
-	&__content2  &__title {
-		margin: 0px 70px 0px 20px;
-		padding: 15px 0 0 0;
-	}
-	&__content2  &__title h2{
+	&__image {
 		align-self: center;
-		color: #445161;
-		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-		font-size: 30px;
-		line-height: 36px;
-		text-align: left;
-		
-	}
-	&__content2 &__text{
-		display: inline-block;
-		
-		color: #333333;
-		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-		font-size: 16px;
-		line-height: 24px;
-		text-align: left;
-		max-width: 641px;
-		
-	}
-	&__content &__text p{
-		padding: 20px 0 0 0;
-	}
-	&__content2 &__image{
-		margin: 0px 20px 0px 50px;
-	}
-	&__element3 {
 	}
 
-	&__element4 {
+	&__title-text {
+		
+		& h1{			
+			text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+			color: #ffffff;
+			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+			font-size: 60px;
+			
+		}
+		& .list{
+			margin: 5% 0px 0px 0px;
+			text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+			color: #ffffff;
+			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+			font-size: 20px;
+			line-height: 36px;
+		}
+		& .list li::before{
+			content: "";
+			display: inline-block;
+			width: 25px;
+			height: 19px;
+			position: relative;
+			top: 2px;
+			margin: 0px 10px 0px 0px;
+			background-color: #ffffff;
+			background: url("/img/check_icon.png")  no-repeat;
+		}
+	}
+}
+.block-main {
+
+	&__container {
 	}
 
-	&__element5 {
-		flex: 0 1 auto;
+	&__image {
+	}
+
+	&__title-text {
+	}
+}
+.block-postcontainer {
+
+	&__container {
+	}
+
+	&__post {
+	}
+
+	&__title-text {
+	}
+}
+.block-postconrainer {
+
+	&__image {
+	}
+}
+.block-subscribe {
+
+	&__container {
+	}
+
+	&__post {
 	}
 }
