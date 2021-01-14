@@ -13,7 +13,7 @@
 		align-items: center;
 		width: auto;
 		height: 323px;
-		background-color: beige;
+		background-color: #445162;
 	}
 
 	&__main {
@@ -24,14 +24,19 @@
 
 	&__subscribe {
 	}
+
+	&__footer {
+	}
+
 }
+
 .block-header {
 
 	&__container {
 		display: flex;
 		width: 1180px;
 		height: 222px;
-		background-color: #445162;
+		
 		margin: 0px auto;
 		justify-content: space-between;
 		
@@ -72,37 +77,224 @@
 	}
 }
 .block-main {
-
+	display: flex;
+	height: 290px;
+	align-items: center;
+	background-color: white;
 	&__container {
+		display: flex;
+		width: 1109px;
+		height: 195px;
+		margin: 0px auto;
 	}
 
 	&__image {
+		align-self: center;
 	}
 
 	&__title-text {
+		align-self: flex-end;
+		margin: 0px 0px 0px 38px;
+		& h2{		
+			color: #445161;
+			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+			font-size: 30px;
+			line-height: 36px;
+			text-align: left;
+		}
+		& p{
+			margin: 20px 0px 0px 0px;
+			color: #333333;
+			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+			font-size: 16px;
+			line-height: 24px;
+			text-align: left;
+		}
+		
+		
 	}
 }
 .block-postcontainer {
+	height: 486px;
+	display: flex;
+	position: relative;
+	justify-content: center;
+	background-color: #f5f5f5;
 
-	&__container {
+	&__container-column {
+		width: 1167px;
+		height: 155px;
+		margin: 8% 0px 0px 0px;
 	}
-
+	&__container-column_margin{
+		margin: 2% 0px 0px 0px;
+	}
+	&__title{
+		width: 1167px;
+		position: absolute;
+		top: 5px;
+		margin: 2% 0px 0px 0px;	
+		color: #445161;
+		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+		font-size: 30px;
+		line-height: 36px;
+		text-align: center;
+	}
+	&__flex-container{
+		display: flex;
+	}
 	&__post {
+		display: flex;
+		width: 49%;
+		margin: 0px auto 0 0;
 	}
 
 	&__title-text {
+		margin: 0px 0px 0px 1%;
+		
+		& h2{
+			color: #445161;
+			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+			font-size: 24px;
+			line-height: 30px;
+			text-align: left;
+			margin: 0px 0px 10px 0px;
+		}
+		& p{
+
+			color: #333333;
+			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+			font-size: 16px;
+			line-height: 24px;
+			text-align: left;
+		}
 	}
 }
 .block-postconrainer {
 
 	&__image {
+		min-width: 200px;
+		height: 150px;
+		background-color: #445161;
 	}
 }
 .block-subscribe {
-
+	flex: 1 1 auto;
+	height: 655px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background-color: #ffffff;
+	&__title-main{
+		position: absolute;		
+		color: #445161;
+		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+		font-size: 30px;
+		line-height: 36px;
+		text-align: left;
+		top: 6%;
+		left: 35%
+	}
 	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		width: 988px;
+		height: 556px;
+		background-color: white;
+		
 	}
 
 	&__post {
+		background-color: #445162;
+		border-radius: 1%;
+		width: 300px;
+		height: 499px;
+		border: 1px solid #000;
+		
 	}
+}
+
+.block-footer {
+	background-color: #f5f5f5;
+	width: auto;
+	height: 68px;
+	flex: 0 1 auto;
+	&__container{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		height: 100%;
+	}
+	&__title{
+		height: 11px;
+		color: #445162;
+		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+		font-size: 12px;
+		line-height: 24px;
+		text-align: center;
+		letter-spacing: 0.3px;
+		align-self: center;
+	}
+}
+.block-subscribe-post{
+	display: flex;
+	flex-direction: column;
+	
+	&__title{
+		height: 52px;
+		display: flex;
+		justify-content: center;
+		align-items: center;			
+		color: #ffffff;
+		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+		font-size: 24px;
+		line-height: 30px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	&__sub-title{
+		background-color: white;
+		width: 300px;
+		height: 71px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 2px solid #445162;
+		color: #445162;
+		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+		font-size: 40px;
+	}
+	&__text{
+		color: #ffffff;
+		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+		line-height: 24px;
+		text-align: left;
+		flex: 1 1 auto;
+		width: 250px;
+		height: 275px;
+		align-self: center;
+		
+		& p{
+			padding: 10px 0 10px 0;
+		}
+	}
+	&__button{
+		width: 260px;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: #ffffff;
+		color: #445161;
+		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+		font-size: 18px;
+		font-weight: 700;
+		border-radius: 5px;
+		align-self: center;
+		margin: 0px 0px 20px 0px;
+	}
+	
 }
